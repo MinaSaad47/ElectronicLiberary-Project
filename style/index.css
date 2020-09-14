@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+#mainbar {
+    height: 70px;
+    background-color: #444444;
+    border-bottom: 5px solid #8e7144;
+    margin: 0;
+    padding: 0;
+}
+#MainImage {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+#MainTitle {
+    color: white;
+    font-size: 28pt;
+}
+#menubar {
+    font-size: 15pt;
+    float: right;
+    margin-right: 10px;
+}
+#menulist {
+    list-style: none;
+    display: inline-block;
+}
+#menulist li {
+    display: inline-block;
+    margin-left: 10px;
+}
+#menulist li a {
+    color: silver;
+    text-decoration: none;
+
+}
+#menulist li a:hover {
+    color: white
+}
+#register {
+    background-image: url(../img/register.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 10000px;
+}
+
+#registration table {
+
+    background-color: silver;
+    margin: 1%;
+    border: 10px solid #8e7144;
+    border-radius: 30px;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#registration  th {
+    border-collapse: collapse;
+}
+
+#registration td {
+    width: 50%;
+}
+
+#registration fieldset {
+    border: 5px dashed #8e7144;
+    border-radius: 20px;
+    display: block;
+    font-size: 20pt;
+}
+#registration input {
+    margin: 5px;
+    width: 50%;
+    border: 1px solid #8e7144;
+}
+#registration #email {
+    margin-left: 50px;
+}
+#registration #submit {
+    height: 30px;
+    margin: 20px;
+}

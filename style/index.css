@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
 }
 #mainbar {
     height: 70px;
@@ -40,13 +41,14 @@ body {
 #menulist li a:hover {
     color: white
 }
-#register {
+#content {
     background-image: url(../img/register.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 10000px;
+    height: 750px;
+    
 }
-
+/* Registeration Page */
 #registration table {
 
     background-color: silver;
@@ -64,6 +66,7 @@ body {
 
 #registration td {
     width: 50%;
+    
 }
 
 #registration fieldset {
@@ -83,4 +86,17 @@ body {
 #registration #submit {
     height: 30px;
     margin: 20px;
+}
+/* About Page */
+#about {
+    border: 5px solid #8e7144;
+    background-color: #444444;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 5%;
+    width: 70%;
+    height: 75%;
+    border-radius: 30px;
+    text-align: center;
+    color: #8e7144;
 }

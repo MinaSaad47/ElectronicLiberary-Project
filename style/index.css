@@ -51,8 +51,9 @@ body {
 /* Registeration Page */
 #registration table {
 
-    background-color: silver;
-    margin: 1%;
+    background-color: #444444;
+    color: #8e7144;
+    margin-top: 10%;
     border: 10px solid #8e7144;
     border-radius: 30px;
     text-align: center;
@@ -86,6 +87,10 @@ body {
 #registration #submit {
     height: 30px;
     margin: 20px;
+}
+.inputbg {
+    background-color: #8e7144;
+    color: #444444;
 }
 /* About Page */
 #about {

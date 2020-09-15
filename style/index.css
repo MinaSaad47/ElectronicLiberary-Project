@@ -1,6 +1,8 @@
-body {
+body, html {
+    height: 100%;
     margin: 0;
     padding: 0;
+
 }
 #mainbar {
     height: 70px;
@@ -43,9 +45,10 @@ body {
 }
 #content {
     background-image: url(../img/register.jpg);
-    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 750px;
+    background-size: cover;
+    height: 100%;
     
 }
 /* Registeration Page */

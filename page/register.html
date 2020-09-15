@@ -46,7 +46,7 @@
                 <tr>
                     <td>
                         <form>
-                            <label for="username">Username</label>
+                            <label for="username" id="usernamein">Username</label>
                             <input type="text" class="inputbg">
                             <br>
                             <label for="Password">Password</label>
@@ -58,7 +58,7 @@
                     <td>
                         <form>
                             <label for="username">Username</label>
-                            <input type="text" class="inputbg">
+                            <input type="text" class="inputbg"  id="usernameup">
                             <br>
                             <label for="email">Email</label>
                             <input type="text" class="inputbg" id="email" onkeyup="emailvalid()">
@@ -69,7 +69,7 @@
                             <label for="Password">Confirm Password</label>
                             <input type="password" class="inputbg" id="confirmpass" onkeyup="confirmvalid()">
                             <br>
-                            <input type="submit" value="Sign Up" class="inputbg" id="submit" onsubmit="checksingup()">
+                            <input type="submit" value="Sign Up" class="inputbg" id="submit"  onclick="checksubmit()">
                         </form>
                     </td>
                 </tr>  

@@ -24,3 +24,21 @@ function confirmvalid() {
         document.getElementById("confirmpass").style="background-color: red";
     }
 }
+function checksubmit() {
+    var name = document.getElementById("usernameup").value;
+    var email = document.getElementById("email").value
+    var pass = document.getElementById("createpass").value;
+    var confirm = document.getElementById("confirmpass").value;
+    if (name == "") {
+        document.getElementById("usernameup").style="background-color: red";
+    } else if (email == "") {
+        document.getElementById("email").style="background-color: red";
+    } else if (pass == "") {
+        document.getElementById("createpass").style="background-color: red";
+    } else if (confirm == "") {
+        document.getElementById("confirmpass").style="background-color: red";
+    } else {
+        
+    }
+
+}

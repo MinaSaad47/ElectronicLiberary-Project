@@ -53,8 +53,8 @@ body, html {
 }
 /* Registeration Page */
 #registration table {
-
     background-color: #444444;
+    opacity: 0.8;
     color: #8e7144;
     margin-top: 10%;
     border: 10px solid #8e7144;
@@ -63,6 +63,7 @@ body, html {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+    
 }
 #registration  th {
     border-collapse: collapse;
@@ -70,21 +71,26 @@ body, html {
 
 #registration td {
     width: 50%;
+    padding: 0;
     
 }
 
-#registration fieldset {
+#registration form {
     border: 5px dashed #8e7144;
     border-radius: 20px;
+    margin: 0;
     display: block;
-    font-size: 20pt;
+    font: 20pt bold;
+    height: 300px;
+    padding: 7%;
 }
 #registration input {
     margin-right: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     float: right;
     width: 50%;
     border: 1px solid #8e7144;
+    opacity: 1;
 }
 #registration #email {
     margin-left: 50px;
@@ -102,6 +108,7 @@ body, html {
 #about {
     border: 5px solid #8e7144;
     background-color: #444444;
+    opacity: 0.8;
     margin-left: 14%;
     margin-right: 14%;
     margin-top: 5%;

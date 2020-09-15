@@ -80,7 +80,9 @@ body, html {
     font-size: 20pt;
 }
 #registration input {
-    margin: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    float: right;
     width: 50%;
     border: 1px solid #8e7144;
 }
@@ -88,6 +90,7 @@ body, html {
     margin-left: 50px;
 }
 #registration #submit {
+    float: none;
     height: 30px;
     margin: 20px;
 }

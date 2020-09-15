@@ -62,13 +62,16 @@
                             <label for="username">Username</label>
                             <input type="text" class="inputbg">
                             <br>
-                            <label for="email" id="email">Email</label>
-                            <input type="text" class="inputbg">
+                            <label for="email">Email</label>
+                            <input type="text" class="inputbg" id="email" onkeyup="emailvalid()">
                             <br>
                             <label for="Password">Password</label>
-                            <input type="password" class="inputbg">
+                            <input type="password" class="inputbg"  onkeyup="passvalid()" id="createpass">
                             <br>
-                            <input type="submit" value="Sign Up" class="inputbg" id="submit">
+                            <label for="Password">Confirm Password</label>
+                            <input type="password" class="inputbg" id="confirmpass" onkeyup="confirmvalid()">
+                            <br>
+                            <input type="submit" value="Sign Up" class="inputbg" id="submit" onsubmit="checksingup()">
                         </fieldset>
                     </td>
                 </tr>  

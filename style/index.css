@@ -60,23 +60,23 @@ body, html {
     border: 10px solid #8e7144;
     border-radius: 30px;
     text-align: center;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
     
 }
 #registration  th {
-    border-collapse: collapse;
+    font-size: 47px;
 }
 
 #registration td {
     width: 50%;
-    padding: 0;
+    padding: 2%;
     
 }
 
 #registration form {
-    border: 5px dashed #8e7144;
+    border: 5px double #8e7144;
     border-radius: 20px;
     margin: 0;
     display: block;
@@ -87,26 +87,30 @@ body, html {
 #registration input {
     margin-right: 5px;
     margin-top: 15px;
-    float: right;
-    width: 50%;
-    border: 1px solid #8e7144;
-    opacity: 1;
-}
-#registration #email {
-    margin-left: 50px;
+    width: 80%;
+    color: black;
+    border: 5px solid #8e7144;
+    border-radius: 20px;
 }
 #registration #submit {
-    float: none;
-    height: 30px;
-    margin: 20px;
+    width: 90%;
+    height: 20%;
+    margin-top: 10%;
+    font-size: 1em;
 }
+::placeholder {
+    color: black;
+}
+
 .inputbg {
     background-color: #8e7144;
+    height: 10%;
+    border: 3px solid #8e7144;
     color: #444444;
 }
 /* About Page */
 #about {
-    border: 5px solid #8e7144;
+    border: 20px solid #8e7144;
     background-color: #444444;
     opacity: 0.8;
     margin-left: 14%;

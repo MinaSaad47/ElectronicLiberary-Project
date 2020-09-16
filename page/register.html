@@ -15,6 +15,13 @@
                 <span id="MainTitle" style="color: #8e7144;">Liberary</span>
                 <span id="MainTitle" style="font-size: 8pt">WB</span>
                 <nav id="menubar">
+                    <form id="loginonmenu">
+                        <input type="text" name="username" id="usernamein" placeholder="Username" onkeyup="usernamevalid('usernamein')">
+                        <input type="password" name="password" id="passwordin" placeholder="Password" onkeyup="passvalid('passwordin')">
+                        <input type="button" value="Log In" onclick="checklogin('usernamein', 'passwordin')" id="loginbutton">
+                        <br>
+                        <label for="logedinuser" type="text" id="logedinuser">Guest</label>
+                    </form>
                     <ul id="menulist">
                         <li>
                             <a href="../index.html">Home</a>
@@ -55,11 +62,11 @@
                     </td>
                     <td>
                         <form>
-                            <input type="text" class="inputbg"  id="usernameup" placeholder="User Name">
+                            <input type="text" class="inputbg"  id="usernameup" placeholder="User Name" onkeyup="usernamevalid('usernameup')">
                             <br>
                             <input type="text" class="inputbg" id="email" placeholder="User E-mail" onkeyup="emailvalid()">
                             <br>
-                            <input type="password" class="inputbg"  onkeyup="passvalid()" id="createpass" placeholder="Password">
+                            <input type="password" class="inputbg"  id="createpass" onkeyup="passvalid('createpass')" placeholder="Password">
                             <br>
                             <input type="password" class="inputbg" id="confirmpass"  placeholder="Confirm The Password" onkeyup="confirmvalid()">
                             <br>

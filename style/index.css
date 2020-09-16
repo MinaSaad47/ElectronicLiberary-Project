@@ -1,3 +1,8 @@
+/* fonts */
+@font-face {
+    font-family: awesome;
+    src: url("../fonts/fa-regular-400.ttf");
+}
 body, html {
     height: 100%;
     margin: 0;
@@ -23,13 +28,36 @@ body, html {
     font-size: 28pt;
 }
 #menubar {
+    width: 60%;
     font-size: 15pt;
     float: right;
     margin-right: 10px;
 }
+#loginonmenu {
+    position: absolute;
+    width: 30%;
+}
+#loginonmenu input{
+    background-color: #8e7144;
+    height: 10%;
+    border: 3px solid #8e7144;
+    margin-top: 22px;
+    color: #444444;
+    border: 3px solid #8e7144;
+    border-radius: 20px;
+    
+}
+#loginonmenu label {
+    visibility: hidden;
+    position: relative;
+    color: #8e7144;
+    font-family: awesome, monospace;
+    bottom: 22px;
+}
+
 #menulist {
+    float: right;
     list-style: none;
-    display: inline-block;
 }
 #menulist li {
     display: inline-block;

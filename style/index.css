@@ -28,7 +28,7 @@ body, html {
     font-size: 28pt;
 }
 #menubar {
-    width: 60%;
+    width: 65%;
     font-size: 15pt;
     float: right;
     margin-right: 10px;
@@ -37,6 +37,16 @@ body, html {
     position: absolute;
     width: 30%;
 }
+nav input[type="text"] {
+    width: 35%;
+}
+nav input[type="password"] {
+    width: 35%;
+}
+nav input[type="button"] {
+    width: 16%;
+}
+
 #loginonmenu input{
     background-color: #8e7144;
     height: 10%;
@@ -84,7 +94,7 @@ body, html {
     background-color: #444444;
     opacity: 0.8;
     color: #8e7144;
-    margin-top: 10%;
+    margin-top: 5%;
     border: 10px solid #8e7144;
     border-radius: 30px;
     text-align: center;
@@ -138,7 +148,7 @@ body, html {
 }
 /* About Page */
 #aboutpage {
-    border: 20px solid #8e7144;
+    border: 10px solid #8e7144;
     background-color: #444444;
     opacity: 0.8;
     margin-left: 14%;

@@ -54,7 +54,7 @@ function checksubmit() {
     }
 
 }
-function checklogin(username, password) {
+function checklogin(username, password, pageid) {
     var name = document.getElementById(username).value;
     var pass = document.getElementById(password).value;
     if (name == "" || name.length < 3) {
@@ -62,11 +62,18 @@ function checklogin(username, password) {
     } else if (pass == "" || pass.length < 8) {
         document.getElementById(password).style="border-color: red";
 
+    } else if (name == "webbadger" && pass == "webbadger") {
+        document.getElementById(pageid).style = "visibility: hidden";
+        document.getElementById(username).style = "visibility: hidden";
+        document.getElementById(password).style = "visibility: hidden";
+        document.getElementById("loginbutton").style = "visibility: hidden";
+        document.getElementById("logedinuser").style = "visibility: visible"
+        document.getElementById("logedinuser").innerHTML = "Loged In As  " + document.getElementById(username).value + " (Admin)";
     } else {
-        document.getElementById(username).style="visibility: hidden";
-        document.getElementById(password).style="visibility: hidden";
-        document.getElementById("loginbutton").style="visibility: hidden";
+        document.getElementById(username).style = "visibility: hidden";
+        document.getElementById(password).style = "visibility: hidden";
+        document.getElementById("loginbutton").style = "visibility: hidden";
         document.getElementById("logedinuser").innerHTML = "Loged In As  " + document.getElementById(username).value;
-        document.getElementById("logedinuser").style="visibility: visible"
+        document.getElementById("logedinuser").style = "visibility: visible"
     }
 }

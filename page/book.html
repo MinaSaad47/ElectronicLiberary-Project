@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Electronic Liberary</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="../script/script.js"></script>
 </head>
 <body>
-    
-</body>
+    <div id="content">
+        <header>
+            <div id="mainbar">
+                <img src="../img/ElectronicBook.png" alt="can't load the image" id="MainImage">
+                <span id="MainTitle">Electronic</span>
+                <span id="MainTitle" style="color: #8e7144;">Liberary</span>
+                <span id="MainTitle" style="font-size: 8pt">WB</span>
+                <nav id="menubar">
+                    <form id="loginonmenu">
+                        <input type="text" name="username" id="usernamein" placeholder="Username" onkeyup="usernamevalid('usernamein')">
+                        <input type="password" name="password" id="passwordin" placeholder="Password" onkeyup="passvalid('passwordin')">
+                        <input type="button" value="Log In" onclick="checklogin('usernamein', 'passwordin', 'aboutpage')" id="loginbutton">
+                        <br>
+                        <label for="logedinuser" type="text" id="logedinuser">Guest</label>
+                    </form>
+                    <ul id="menulist">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="book.html"  style="color: #8e7144;">Books</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="register.html">Register</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="bookslib">
+            <select name="category" id="category">
+                <option value="Select Category" disabled selected>Select Category</option>
+                <option value="Programing" onclick="displaycategory('Programing')">Programing</option>
+            </select>
+            <div id="categorys">
+                    <div id="programing">
+                        <a href="https://cses.fi/book/book.pdf" target="_blank"> Competitive Programmer’s Handbook </a>
+                    </div>
+            </div>
+        </section>
+
+        </div>
+    </body>
 </html>

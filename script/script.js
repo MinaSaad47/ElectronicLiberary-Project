@@ -77,3 +77,10 @@ function checklogin(username, password, pageid) {
         document.getElementById("logedinuser").style = "visibility: visible"
     }
 }
+
+function displaycategory(category) {
+    if (category == "Programing") {
+        document.getElementById("programing").style= "visibility: visible";
+    }
+
+}

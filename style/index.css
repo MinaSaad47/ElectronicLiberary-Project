@@ -90,6 +90,10 @@ nav input[type="button"] {
     
 }
 /* Registeration Page */
+#registration {
+    border: 0;
+    background: transparent;
+}
 #registration table {
     background-color: #444444;
     opacity: 0.8;
@@ -146,17 +150,63 @@ nav input[type="button"] {
     border: 3px solid #8e7144;
     color: #444444;
 }
-/* About Page */
-#aboutpage {
+section {
     border: 10px solid #8e7144;
     background-color: #444444;
     opacity: 0.8;
+   
+    border-radius: 30px;
+    text-align: center;
+    color: #8e7144;
+}
+/* About Page */
+
+#aboutpage {
     margin-left: 14%;
     margin-right: 14%;
     margin-top: 5%;
     width: 70%;
     height: 75%;
-    border-radius: 30px;
-    text-align: center;
-    color: #8e7144;
+}
+
+/* Book Page */
+
+#bookslib {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+    width: 90%;
+    height: 85%;
+}
+
+#category {
+    background-color: #8e7144;
+    height: 5%;
+    margin-top: 2%;
+    margin-left: 5%;
+    border: 3px solid #8e7144;
+    color: #444444;
+    border: 2 px solid #444444;
+    border-radius: 20px;
+    float: left;
+}
+
+#programing {
+    visibility: hidden;
+}
+
+#categorys {
+    float: left;
+    margin-left: 5%;
+    margin-top: 8%
+}
+a {
+    color: silver;
+    text-decoration: none;
+}
+a:visited {
+    color: #f79809;
+}
+a:hover {
+    color: white
 }

@@ -210,3 +210,57 @@ a:visited {
 a:hover {
     color: white
 }
+
+
+/* Home Page */
+
+#news {
+    margin-left: 3%;
+    margin-right: 0%;
+    margin-top: 1.5%;
+    width: 80%;
+    height: 85%;
+    float: left;
+}
+
+#links {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 1.5%;
+    width: 13%;
+    height: 85%;
+    float: right;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#news #newspage {
+    overflow: scroll;
+    width: 95%;
+    height: 88%;
+
+}
+#news #newspage ul {
+    list-style: none;
+}
+#news #newspage li {
+    float: left;
+    margin-bottom: 7%;
+    width: 100%;
+}
+#news #newspage strong {
+    font-size: 25px;
+    float: left;
+}
+#news #newspage p {
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: silver;
+}
+
+#news #newspage mark {
+    background-color: transparent;
+    color: #f79809;
+}

@@ -79,8 +79,10 @@ function checklogin(username, password, pageid) {
 }
 
 function displaycategory(category) {
-    if (category == "Programing") {
-        document.getElementById("programing").style= "visibility: visible";
+    var categorys = ["programing", "physics"]
+    for (var i = 0; i < categorys.length; i++) {
+        document.getElementById(categorys[i]).style= "visibility: hidden"; 
     }
-
+    document.getElementById(category).style= "visibility: visible";
+    
 }

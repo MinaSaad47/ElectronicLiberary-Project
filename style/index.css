@@ -191,8 +191,10 @@ section {
     float: left;
 }
 
-#programing {
+#categorys div {
     visibility: hidden;
+    position: absolute;
+
 }
 
 #categorys {

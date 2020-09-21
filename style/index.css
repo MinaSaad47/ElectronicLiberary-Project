@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #444444;
+    --secondary-color: #8e7144;
+}
 /* fonts */
 @font-face {
     font-family: awesome;
@@ -11,8 +15,8 @@ body, html {
 }
 #mainbar {
     height: 70px;
-    background-color: #444444;
-    border-bottom: 5px solid #8e7144;
+    background-color: var(--primary-color);
+    border-bottom: 5px solid var(--secondary-color);
     margin: 0;
     padding: 0;
 }
@@ -47,20 +51,20 @@ nav input[type="button"] {
     width: 16%;
 }
 
-#loginonmenu input{
-    background-color: #8e7144;
+input{
+    background-color: var(--secondary-color);
     height: 10%;
-    border: 3px solid #8e7144;
+    border: 3px solid var(--secondary-color);
     margin-top: 22px;
-    color: #444444;
-    border: 3px solid #8e7144;
+    color: var(--primary-color);
+    border: 3px solid var(--secondary-color);
     border-radius: 20px;
     
 }
 #loginonmenu label {
     visibility: hidden;
     position: relative;
-    color: #8e7144;
+    color: var(--secondary-color);
     font-family: awesome, monospace;
     bottom: 22px;
 }
@@ -95,11 +99,11 @@ nav input[type="button"] {
     background: transparent;
 }
 #registration table {
-    background-color: #444444;
+    background-color: var(--primary-color);
     opacity: 0.8;
-    color: #8e7144;
+    color: var(--secondary-color);
     margin-top: 5%;
-    border: 10px solid #8e7144;
+    border: 10px solid var(--secondary-color);
     border-radius: 30px;
     text-align: center;
     width: 50%;
@@ -118,7 +122,7 @@ nav input[type="button"] {
 }
 
 #registration form {
-    border: 5px double #8e7144;
+    border: 5px double var(--secondary-color);
     border-radius: 20px;
     margin: 0;
     display: block;
@@ -131,7 +135,7 @@ nav input[type="button"] {
     margin-top: 15px;
     width: 80%;
     color: black;
-    border: 5px solid #8e7144;
+    border: 5px solid var(--secondary-color);
     border-radius: 20px;
 }
 #registration #submit {
@@ -145,19 +149,19 @@ nav input[type="button"] {
 }
 
 .inputbg {
-    background-color: #8e7144;
+    background-color: var(--secondary-color);
     height: 10%;
-    border: 3px solid #8e7144;
-    color: #444444;
+    border: 3px solid var(--secondary-color);
+    color: var(--primary-color);
 }
 section {
-    border: 10px solid #8e7144;
-    background-color: #444444;
+    border: 10px solid var(--secondary-color);
+    background-color: var(--primary-color);
     opacity: 0.8;
    
     border-radius: 30px;
     text-align: center;
-    color: #8e7144;
+    color: var(--secondary-color);
 }
 /* About Page */
 
@@ -167,6 +171,8 @@ section {
     margin-top: 5%;
     width: 70%;
     height: 75%;
+    position: absolute;
+
 }
 
 /* Book Page */
@@ -180,13 +186,13 @@ section {
 }
 
 #category {
-    background-color: #8e7144;
+    background-color: var(--secondary-color);
     height: 5%;
     margin-top: 2%;
     margin-left: 5%;
-    border: 3px solid #8e7144;
-    color: #444444;
-    border: 2 px solid #444444;
+    border: 3px solid var(--secondary-color);
+    color: var(--primary-color);
+    border: 2 px solid var(--primary-color);
     border-radius: 20px;
     float: left;
 }
@@ -266,3 +272,25 @@ a:hover {
     background-color: transparent;
     color: #f79809;
 }
+
+
+/* Admin Panel */
+
+#adminpanal {
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 5%;
+    width: 70%;
+    height: 75%;
+    visibility: hidden;
+    position: absolute;
+}
+#adminpanal input[type=text] {
+    width: 60%;
+}
+#adminpanal input[type=button] {
+    width: 30%;
+    margin-top: 10%;
+    font-size: 2em;
+}
+

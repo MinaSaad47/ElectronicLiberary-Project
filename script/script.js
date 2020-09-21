@@ -64,6 +64,7 @@ function checklogin(username, password, pageid) {
 
     } else if (name == "webbadger" && pass == "webbadger") {
         document.getElementById(pageid).style = "visibility: hidden";
+        document.getElementById("adminpanal").style = "visibility: visible"
         document.getElementById(username).style = "visibility: hidden";
         document.getElementById(password).style = "visibility: hidden";
         document.getElementById("loginbutton").style = "visibility: hidden";
@@ -85,4 +86,12 @@ function displaycategory(category) {
     }
     document.getElementById(category).style= "visibility: visible";
     
+}
+
+function applytheme() {
+    alert("1")
+    wallpaper = document.getElementById("content");
+    newwallpaper = document.getElementById("newwallpaper").value;
+    wallpaper.style = "background-image: url('" + newwallpaper + "')";
+
 }

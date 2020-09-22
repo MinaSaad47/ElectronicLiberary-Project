@@ -48,7 +48,6 @@ function checksubmit() {
         document.getElementById("createpass").style="border-color: red";
     } else if (confirm == "" || confirmvalid() == false) {
         document.getElementById("confirmpass").style="border-color: red";
-        alert("1");
     } else {
         
     }

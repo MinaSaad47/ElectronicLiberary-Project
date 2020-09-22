@@ -65,7 +65,7 @@ input{
     visibility: hidden;
     position: relative;
     color: var(--secondary-color);
-    font-family: awesome, monospace;
+    font-family: awesome;
     bottom: 22px;
 }
 
@@ -92,6 +92,11 @@ input{
     background-size: cover;
     height: 100%;
     
+}
+/* Section Title */
+section h1 {
+    font-size: 48pt;
+    margin:1px;
 }
 /* Registeration Page */
 #registration {
@@ -272,8 +277,20 @@ a:hover {
     background-color: transparent;
     color: #f79809;
 }
-
-
+#links a {
+    font-size: 20px ;
+    font-family: awesome;
+}
+#links ul {
+    list-style: none;
+    margin-top: 20%;
+    
+}
+#links img {
+    width: 20%;
+    height: 20%;
+    margin-top: 10%;
+}
 /* Admin Panel */
 
 #adminpanal {

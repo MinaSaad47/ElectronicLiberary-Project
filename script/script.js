@@ -68,12 +68,12 @@ function checklogin(username, password, pageid) {
         document.getElementById(password).style = "visibility: hidden";
         document.getElementById("loginbutton").style = "visibility: hidden";
         document.getElementById("logedinuser").style = "visibility: visible"
-        document.getElementById("logedinuser").innerHTML = "Loged In As  " + document.getElementById(username).value + " (Admin)";
+        document.getElementById("logedinuser").innerHTML = "Loged In As  " + document.getElementById(username).value + " [Admin] (Press F5 to log out)";
     } else {
         document.getElementById(username).style = "visibility: hidden";
         document.getElementById(password).style = "visibility: hidden";
         document.getElementById("loginbutton").style = "visibility: hidden";
-        document.getElementById("logedinuser").innerHTML = "Loged In As  " + document.getElementById(username).value;
+        document.getElementById("logedinuser").innerHTML = "Loged In As  " + document.getElementById(username).value + " (Press F5 to log out)";
         document.getElementById("logedinuser").style = "visibility: visible"
     }
 }

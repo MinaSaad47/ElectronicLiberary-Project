@@ -11,9 +11,9 @@
         <header>
             <div id="mainbar">
                 <img src="../img/ElectronicBook.png" alt="can't load the image" id="MainImage">
-                <span id="MainTitle">Electronic</span>
-                <span id="MainTitle" style="color: #8e7144;">Liberary</span>
-                <span id="MainTitle" style="font-size: 8pt">WB</span>
+                <span class="MainTitle">Electronic</span>
+                <span class="MainTitle" style="color: var(--secondary-color);;">Liberary</span>
+                <span class="MainTitle" style="font-size: 8pt">WB</span>
                 <nav id="menubar">
                     <form id="loginonmenu">
                         <input type="text" name="username" id="usernamein" placeholder="Username" onkeyup="usernamevalid('usernamein')">
@@ -30,7 +30,7 @@
                             <a href="book.html">Books</a>
                         </li>
                         <li>
-                            <a href="about.html" style="color: #8e7144;">About</a>
+                            <a href="about.html" style="color: var(--secondary-color);">About</a>
                         </li>
                         <li>
                             <a href="register.html">Register</a>
@@ -70,8 +70,8 @@
         <section id="adminpanal">
             <h1 style="font-size: 48pt; margin:1px;">Admin Panel</h1>
             <input type="text" placeholder="/full/path/to/the/background_wallpaper" id="newwallpaper"> <br>
-            <input type="text" placeholder="Primary Color (Hex Value)"> <br>
-            <input type="text" placeholder="secondry Color (Hex Value)"> <br>
+            <input type="text" placeholder="Primary Color (Hex Value)" id="newprimarycolor"> <br>
+            <input type="text" placeholder="secondry Color (Hex Value)" id="newsecondarycolor"> <br>
             <input type="button" value="apply" onclick="applytheme()">
         </section>
     </div>

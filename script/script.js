@@ -89,9 +89,18 @@ function displaycategory(category) {
 }
 
 function applytheme() {
-    alert("1")
     wallpaper = document.getElementById("content");
     newwallpaper = document.getElementById("newwallpaper").value;
-    wallpaper.style = "background-image: url('" + newwallpaper + "')";
+    newprimarycolor = document.getElementById("newprimarycolor").value;
+    newsecondarycolor = document.getElementById("newsecondarycolor").value;
+    if (newwallpaper != "") {
+        wallpaper.style = "background-image: url('" + newwallpaper + "')";
+    }
+    if (newprimarycolor != "") {
+        document.documentElement.style.setProperty('--primary-color', newprimarycolor);
+    }
+    if (newsecondarycolor != "") {
+        document.documentElement.style.setProperty('--secondary-color', newsecondarycolor);
+    }
 
 }

@@ -49,16 +49,16 @@
                 </th>
                 <tr>
                     <td>
-                        <form>
-                            <input type="text" class="inputbg" placeholder="User Name">
+                        <form  id="loginform">
+                            <input type="text" class="inputbg" placeholder="User Name" id="usrname" onkeyup="usernamevalid('usrname')">
                             <br>
-                            <input type="password" class="inputbg" placeholder="Password">
+                            <input type="password" class="inputbg" placeholder="Password" id="pass" onkeyup="passvalid('pass')">
                             <br>
-                            <input type="button" value="Sign In" id="submit" class="inputbg">
+                            <input type="button" value="Sign In" id="submit" class="inputbg" onclick="checklogin('usrname', 'pass')">
                         </form>
                     </td>
                     <td>
-                        <form>
+                        <form id="singupform">
                             <input type="text" class="inputbg"  id="usernameup" placeholder="User Name" onkeyup="usernamevalid('usernameup')">
                             <br>
                             <input type="text" class="inputbg" id="email" placeholder="User E-mail" onkeyup="emailvalid()">

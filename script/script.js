@@ -49,7 +49,7 @@ function checksubmit() {
     } else if (confirm == "" || confirmvalid() == false) {
         document.getElementById("confirmpass").style="border-color: red";
     } else {
-        
+        alert("Your accout has been submitted.");
     }
 
 }
@@ -63,18 +63,20 @@ function checklogin(username, password, pageid) {
 
     } else if (name == "webbadger" && pass == "webbadger") {
         document.getElementById(pageid).style = "visibility: hidden";
+        document.getElementById("registration").style = "visibility: hidden";
         document.getElementById("adminpanal").style = "visibility: visible"
-        document.getElementById(username).style = "visibility: hidden";
-        document.getElementById(password).style = "visibility: hidden";
+        document.getElementById("usernamein").style = "visibility: hidden";
+        document.getElementById("passwordin").style = "visibility: hidden";
         document.getElementById("loginbutton").style = "visibility: hidden";
         document.getElementById("logedinuser").style = "visibility: visible"
         document.getElementById("logedinuser").innerHTML = "Loged In As  " + document.getElementById(username).value + " [Admin] (Press F5 to log out)";
     } else {
-        document.getElementById(username).style = "visibility: hidden";
-        document.getElementById(password).style = "visibility: hidden";
+        document.getElementById("usernamein").style = "visibility: hidden";
+        document.getElementById("passwordin").style = "visibility: hidden";
         document.getElementById("loginbutton").style = "visibility: hidden";
         document.getElementById("logedinuser").innerHTML = "Loged In As  " + document.getElementById(username).value + " (Press F5 to log out)";
         document.getElementById("logedinuser").style = "visibility: visible"
+        document.getElementById("registration").style = "visibility: hidden";
     }
 }
 

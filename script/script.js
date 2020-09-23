@@ -80,7 +80,7 @@ function checklogin(username, password, pageid) {
 }
 
 function displaycategory(category) {
-    var categorys = ["programing", "physics"]
+    var categorys = ["programing", "physics", "calculus"]
     for (var i = 0; i < categorys.length; i++) {
         document.getElementById(categorys[i]).style= "visibility: hidden"; 
     }

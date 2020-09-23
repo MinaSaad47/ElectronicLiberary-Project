@@ -189,6 +189,10 @@ section {
     width: 90%;
     height: 85%;
 }
+#programing a {
+    margin-bottom: 5px;
+    float: left;
+}
 
 #category {
     background-color: var(--secondary-color);

@@ -61,9 +61,8 @@ function checklogin(username, password, pageid) {
     } else if (pass == "" || pass.length < 8) {
         document.getElementById(password).style="border-color: red";
 
-    } else if (name == "webbadger" && pass == "webbadger") {
+    } else if (name == "webbadger" && pass == "webbadger" && pageid == "aboutpage") {
         document.getElementById(pageid).style = "visibility: hidden";
-        document.getElementById("registration").style = "visibility: hidden";
         document.getElementById("adminpanal").style = "visibility: visible"
         document.getElementById("usernamein").style = "visibility: hidden";
         document.getElementById("passwordin").style = "visibility: hidden";
